@@ -11,8 +11,10 @@ require_once '../layout/header.php';
 <div class=" overlay-image _bo "><a href="URL_LIEN">
  <img class=" image _bp " src="/img/bk.jpg" alt="Alt text" />
  <div class=" text _q ">Trouver le meilleur endroit pour vivre</div>
-</a></div>
-	
+</a>
+
+  </div>
+
 		<main>
 
     	<h1>Trouver ici la solution pour vous loger</h1>
