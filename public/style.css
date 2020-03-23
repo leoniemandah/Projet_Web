@@ -1,4 +1,8 @@
-   
+#conteneur
+{
+    display: flex;
+    justify-content: space-around;
+}  
 body{
 	margin: 0vw;
 	font-family: "Calibri Light", sans-serif;

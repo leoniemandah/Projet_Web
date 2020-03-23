@@ -29,28 +29,39 @@
     	<h1>Trouver ici la solution pour vous loger</h1>
 
 
-    	
-		<table class="photos">
-			<tr>
-			   <td>
-					<img src="img/lyon.jpg" alt="...">
-					Lyon
-			   </td>
-			 </tr>
-			<tr>
-			   <td>
-					<img src="img/marseille2.jpg" alt="...">
-					Marseille
-			   </td>
-			 </tr>
-			 <tr>
-				<td>
-					 <img src="img/paris.jpg" alt="...">
-					 Paris
-				</td>
-			  </tr>
-		 </table>
-    	
+         <div id="conteneur">
+
+<div class="card" style="width: 18rem;">
+  <img src="img/lyon.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Lyon</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <button name="button">Acheter</button>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="img/marseille2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Marseille</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <button name="button">Acheter</button>
+  </div>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+  <img src="img/paris.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Paris</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <button name="button">Acheter</button>
+  </div>
+</div>
+
+</div>
+
+
    
     </main>
 
