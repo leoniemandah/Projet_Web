@@ -73,6 +73,8 @@ require_once '../layout/header.php';
 		<i class="fas fa-star"></i>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">    
 		<i class="fas fa-star"></i>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">    
+		<i class="fas fa-star"></i>
 		<h3>Joshua</h3>
 		<q>Tout était parfait. Accueil et confort de la chambre ,chambre plus grande que prévue merci à la direction et au Corona ? Lit assez haut mais pratique et confortable</q>
 	</section>
