@@ -58,7 +58,7 @@ body img {
 
 }
 
-main h1, main h2 {
+main h1 {
 	text-align: center;
 	padding-top: 2vw;
 	font-family: 'Bebas Neue', cursive;
@@ -69,32 +69,6 @@ main h1, main h2 {
 
 
 
-.Catégories{
-	display: flex;
-	flex-direction: column;
-	width: 12vw;
-}
-
-.Catégories h3{
-	color:  #4b0b26;
-	font-size: 30px;
-	padding-bottom: 2vw;
-}
-
-.Catégories a 
-{
-	text-decoration: none ;
-	color: black;
-	padding: 7px 0 7px 0 ;
-}
-
-
-.Catégories a:hover 
-{
-	text-decoration: none ;
-	color: white;
-	background: #660033;
-}
 
 main img{
 	width:20vw;
@@ -102,15 +76,6 @@ main img{
 	margin: 3vw 3vw 0 3vw;
 }
 
-
-
-.test{
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction:row;
-	justify-content: space-around;
-	padding: 5vw 0 5vw 0;
-}
 
 footer{
 	background: rgb(207, 206, 203);
@@ -121,17 +86,13 @@ footer li{
 	justify-content: space-around;
 }
 
-footer a, h4 {
+footer a {
 	text-decoration: none ;
 	color: white;
 	font-size: 40px;
 	padding-top:2vw;
 }
 
-footer h4 {
-	text-align: center;
-
-}
 
 footer a:hover 
 {
