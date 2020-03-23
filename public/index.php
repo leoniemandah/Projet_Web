@@ -13,7 +13,25 @@ require_once '../layout/header.php';
  <div class=" text _q ">Trouver le meilleur endroit pour vivre</div>
 </a>
 
-  </div>
+</div>
+<div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="Recherchez par ville">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+   </div>
+</div>
+
+  
+
+
+
+
+  
+
+
+
 
 		<main>
 
