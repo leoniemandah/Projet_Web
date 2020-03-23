@@ -1,12 +1,14 @@
 <?php
+$title = "Devenir hôte";
 require_once '../layout/header.php';
 
 ?>
 
 
+</header>
 
-<h2>Formulaire d'inscription</h2>
-<form action="#">
+<h2>Formulaire d'inscription</h2><br/>
+<form method="POST">
   <p><i>Complétez le formulaire. Les champs marqué par </i><em>*</em> sont <em>obligatoires</em></p>
   <fieldset>
     <legend>Contact</legend>
@@ -40,7 +42,7 @@ require_once '../layout/header.php';
 
 
 
-
+<?php require_once '../layout/footer.php'; ?>
 
 
 
