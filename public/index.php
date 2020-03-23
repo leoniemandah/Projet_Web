@@ -51,15 +51,34 @@ require_once '../layout/header.php';
 
     <h2>Ils nous ont fait confiance...</h2><br/>
 
-    <div id="container">
+   	<div id="container">
 
-    <div class="container-img-texte">
-        <p class="img-texte"><img src="img/index.jfif" style="width: 10rem;">Hôtel raffiné dans un imposant édifice avec chambres sophistiquées, bar luxueux et service de massages.</p>
-</div><br/>
+   	<section>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">    
+		<i class="fas fa-star"></i>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">    
+		<i class="fas fa-star"></i>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">    
+		<i class="fas fa-star"></i>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">    
+		<i class="fas fa-star"></i>
+		<h3>Leila</h3>
+		<q>Tout confort, nous n'avons remarqué aucun soucis dans ce logement, je recommande.</q>
+	</section>
 
-<div class="container-img-texte">
-        <p class="img-texte"><img src="img/images.jfif" style="width: 10rem;">Tout était parfait. Accueil et confort de la chambre ,chambre plus grande que prévue merci à la direction et au Corona ? Lit assez haut mais pratique et confortable</p>
-</div>
+	<section>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">    
+		<i class="fas fa-star"></i>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">    
+		<i class="fas fa-star"></i>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">    
+		<i class="fas fa-star"></i>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">    
+		<i class="fas fa-star"></i>
+		<h3>Joshua</h3>
+		<q>Tout était parfait. Accueil et confort de la chambre ,chambre plus grande que prévue merci à la direction et au Corona ? Lit assez haut mais pratique et confortable</q>
+	</section>
+	</div>
 
 </div>
 
