@@ -14,7 +14,7 @@ require_once '../layout/header.php';
     <legend>Contact</legend>
       <label for="nom">Nom <em>*</em></label>
 
-      <input id="nom" placeholder="Leonie Mandah" autofocus="" required=""><br>
+      <input id="nom" placeholder="Leonie Gauss" autofocus="" required=""><br>
       <label for="telephone">Portable</label>
       
       <input id="telephone" type="tel" placeholder="06xxxxxxxx" pattern="06[0-9]{8}"><br>
