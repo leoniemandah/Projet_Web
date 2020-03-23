@@ -19,7 +19,7 @@ require_once '../layout/header.php';
       
       <input id="telephone" type="tel" placeholder="06xxxxxxxx" pattern="06[0-9]{8}"><br>
       <label for="email">Email <em>*</em></label>
-      <input id="email" type="email" placeholder="prenom.nom@gmail.com" required="" pattern="[a-zA-Z]*.[a-zA-Z]*@polytechnique.edu"><br>
+      <input id="email" type="email" placeholder="prenomnom@gmail.com" required="" pattern="[a-zA-Z]*[a-zA-Z]*@gmail.com"><br>
   </fieldset>
   <fieldset>
     <legend>Information personnelles</legend>
