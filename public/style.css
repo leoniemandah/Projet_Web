@@ -3,6 +3,29 @@
     display: flex;
     justify-content: space-around;
 }  
+
+#container{
+	display: flex;
+    justify-content: space-around;
+
+}
+
+
+.container-img-texte {
+    text-align: center;
+}
+.img-texte  {
+    overflow:auto;
+    color:black;
+    display: block;
+}
+.img-texte img {
+    float:left;
+    margin-right:15px;
+    width:5%;
+}
+
+
 body{
 	margin: 0vw;
 	font-family: "Calibri Light", sans-serif;
@@ -92,7 +115,14 @@ footer a {
 	font-size: 40px;
 	padding-top:2vw;
 }
+h2{
+	text-align: center;
+	padding-top: 2vw;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 70px;
+	color:  grey;
 
+}
 
 footer a:hover 
 {

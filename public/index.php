@@ -63,6 +63,20 @@
 
     </main>
 
+    <h2>Ils nous ont fait confiance...</h2><br/>
+
+    <div id="container">
+
+    <div class="container-img-texte">
+        <p class="img-texte"><img src="img/index.jfif" style="width: 10rem;">Hôtel raffiné dans un imposant édifice avec chambres sophistiquées, bar luxueux et service de massages.</p>
+</div><br/>
+
+<div class="container-img-texte">
+        <p class="img-texte"><img src="img/images.jfif" style="width: 10rem;">Tout était parfait. Accueil et confort de la chambre ,chambre plus grande que prévue merci à la direction et au Corona ? Lit assez haut mais pratique et confortable</p>
+</div>
+
+</div>
+
     <footer>
     	 
 			
