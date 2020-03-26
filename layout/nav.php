@@ -4,7 +4,7 @@
           </a>
 			
             <a href="host.php">Become a host</a>
-			<a href="#">Sign in</a>
+			<a href="login.php">Sign in</a>
 			<a href="#">Sign up</a>
             <a href=""><i class="fa fa-question-circle" aria-hidden="true"></i>Help</a> 
 		</nav>

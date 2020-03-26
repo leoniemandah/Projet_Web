@@ -30,7 +30,7 @@ body{
   border: 3px solid grey;
   border-right: none;
   padding: 16px;
-  height: 20px;
+  height: 40px;
   border-radius: 5px 0 0 5px;
   outline: none;
   color: black;
@@ -42,7 +42,7 @@ body{
 
 .searchButton {
   width: 40px;
-  height: 36px;
+  height: 48px;
   border: 1px solid grey;
   background: grey;
   text-align: center;
@@ -54,7 +54,7 @@ body{
 
 
 .wrap{
-  width: 30%;
+  width: 50%;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -244,7 +244,11 @@ footer a:hover
 
 
 
-  @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+ /*CSS de la page host*/
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
   * {
     margin: 0;
     padding: 0;
@@ -392,3 +396,50 @@ footer a:hover
   :-ms-input-placeholder {
     color: #888;
   }
+
+
+  /*CSS de la page login*/
+
+#login.php body{
+    background: #67BE4B;
+}
+#login{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+}
+/* Bordered form */
+form {
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+input[type=submit] {
+    background-color: #53af57;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
