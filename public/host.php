@@ -7,7 +7,10 @@ require_once '../layout/header.php';
 
 </header>
 
-<body>
+<img src="/img/g.jpg" id="baniere"/>
+
+<figcaption>
+  
   <div class="container">  
     <form id="contact" action="" method="post">
     
@@ -20,7 +23,7 @@ require_once '../layout/header.php';
         <input placeholder="Email" type="email" tabindex="2" required>
       </fieldset>
       <fieldset>
-        <input placeholder="Numéro de téléphone (facultatif)" type="tel" tabindex="3" required>
+        <input placeholder="Numéro de téléphone (facultatif)" type="tel" tabindex="3">
       </fieldset>
       <select id="sexe">
         <option value="F" name="sexe">Femme</option>
@@ -34,9 +37,11 @@ require_once '../layout/header.php';
       </fieldset>
     </form>
   </div>
+  
+  </figcaption>
 
+  </body><br/>
 
-  </body>
 
 
 <?php require_once '../layout/footer.php'; ?>

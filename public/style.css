@@ -10,7 +10,20 @@
 
 }
 
+#baniere{
+  width: 100%;
+  
+  
+}
 
+figcaption {
+  position:absolute;
+  width:80%;
+  height:90%;
+  top:10vw;
+  left:10vw;
+  border-radius:40px;
+}
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
@@ -42,21 +55,22 @@ body{
 
 .searchButton {
   width: 40px;
-  height: 48px;
-  border: 1px solid grey;
-  background: grey;
+  height: 40px;
+  border: 1px solid rgb(149, 255, 149);
+  background: rgb(149, 255, 149);
   text-align: center;
   color: #fff;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
   font-size: 20px;
+  margin-top: 8px;
 }
 
 
 .wrap{
   width: 50%;
   position: absolute;
-  top: 100%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -77,7 +91,7 @@ body{
    }
    /* Texte original */
    .overlay-image .text {
-	color: black;
+  color: whitesmoke;
 	font-size: 50px;
 	line-height: 1.5em;
 	text-shadow: 2px 2px 2px #000;
@@ -117,7 +131,7 @@ width: 100%;
 display:flex;
 flex-wrap: wrap;
 justify-content: space-between;
-background-color:rgb(207, 206, 203) ;
+background-color: rgb(149, 255, 149) ;
 
 
 }
@@ -212,7 +226,7 @@ main img{
 
 
 footer{
-	background: rgb(207, 206, 203);
+	background:  rgb(149, 255, 149);
 }
 
 footer li{
