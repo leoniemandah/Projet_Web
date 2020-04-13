@@ -12,6 +12,7 @@
 
 #baniere{
   width: 100%;
+  filter: blur(4px);
   
   
 }
@@ -456,4 +457,19 @@ input[type=submit]:hover {
     background-color: white;
     color: #53af57;
     border: 1px solid #53af57;
+}
+#fond{
+  width: 100%;
+  filter: blur(4px);
+  
+  
+}
+
+figcaption {
+  position:absolute;
+  width:80%;
+  height:90%;
+  top:10vw;
+  left:10vw;
+  border-radius:40px;
 }

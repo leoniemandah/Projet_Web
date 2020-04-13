@@ -5,7 +5,9 @@ require_once '../layout/header.php';
 ?>	
 		
 	</header>
-    
+    <img src="/img/un.jpg" id="fond"/>
+
+<figcaption>
         <div id="login">
             <!-- zone de connexion -->
             
@@ -29,5 +31,6 @@ require_once '../layout/header.php';
             </form>
         </div>
     <br/>
+</figcaption>
 
     <?php require_once '../layout/footer.php'; ?>

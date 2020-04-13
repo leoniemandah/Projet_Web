@@ -1,4 +1,14 @@
 <?php
+  
+  
+  session_start(); 
+  
+  // Fichier PHP contenant la connexion à votre BDD
+  include('connexionDB.php'); 
+?>
+
+
+<?php
 $title = "Accueil";
 require_once '../layout/header.php';
 
