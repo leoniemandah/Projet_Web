@@ -9,7 +9,7 @@ require_once '../layout/header.php';
 
 <?php
 session_start();
-include('connexionDB.php'); // Fichier PHP contenant la connexion à votre BDD
+include('../src/connexionDB.php'); // Fichier PHP contenant la connexion à votre BDD
 
 // S'il y a une session alors on ne retourne plus sur cette page
 if (isset($_SESSION['id'])){
@@ -54,12 +54,12 @@ if(!empty($_POST)){
 
         }else{
             // On vérifit que le mail est disponible
-            $req_mail = $DB->query("SELECT mail FROM utilisateur WHERE mail = ?",
+            $req_mail = $connexion->query("SELECT email FROM users WHERE email = ?",
                 array($mail));
 
             $req_mail = $req_mail->fetch();
 
-            if ($req_mail['mail'] <> ""){
+            if ($req_mail['email'] <> ""){
                 $valid = false;
                 $er_mail = "Ce mail existe déjà";
             }
@@ -82,7 +82,7 @@ if(!empty($_POST)){
             $date_creation_compte = date('Y-m-d H:i:s');
 
             // On insert nos données dans la table utilisateur
-            $sql->insert("INSERT INTO utilisateur (nom, prenom, mail, mdp) VALUES 
+            $sql->insert("INSERT INTO users (nom, prenom, email, password) VALUES 
                 (?, ?, ?, ?)", 
                 array($nom, $prenom, $mail, $mdp));
 
