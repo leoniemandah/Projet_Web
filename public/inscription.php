@@ -8,129 +8,57 @@ require_once '../layout/header.php';
   
 
 <?php
-session_start();
-include('../src/connexionDB.php'); // Fichier PHP contenant la connexion à votre BDD
 
-// S'il y a une session alors on ne retourne plus sur cette page
-if (isset($_SESSION['id'])){
-    header('Location: index.php'); 
-    exit;
+
+$bdd = new PDO( "mysql:host=localhost;dbname=airbnb",
+"airbnb",
+'sfe2kktlJ9s8lEP9');
+
+if(isset($_POST['inscription']))
+{
+    if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['telephone']))
+{
+    $nom = htmlspecialchars($_POST['nom']);
+    $prenom = htmlspecialchars($_POST['prenom']);
+    $email = sha1($_POST['email']);
+    $password = htmlspecialchars($_POST['password']);
+    $telephone = htmlspecialchars($_POST['telephone']);
+
+$insertmbr = $bdd->prepare("INSERT INTO users(nom, prenom, email, numeroTelephone, password) VALUES(?, ?, ?, ?, ?)");
+$insertmbr ->execute(array($nom, $prenom, $email, $telephone, $password));
+$erreur ="Votre compte a bien été créé !";
+
+}
+else{
+    $erreur = "Tous les champs doivent etre complété";
 }
 
-// Si la variable "$_Post" contient des informations alors on les traitres
-if(!empty($_POST)){
-    extract($_POST);
-    $valid = true;
-
-    // On se place sur le bon formulaire grâce au "name" de la balise "input"
-    if (isset($_POST['inscription'])){
-        $nom  = htmlentities(trim($nom)); // On récupère le nom
-        $prenom = htmlentities(trim($prenom)); // on récupère le prénom
-        $mail = htmlentities(strtolower(trim($mail))); // On récupère le mail
-        $mdp = trim($mdp); // On récupère le mot de passe 
-        $confmdp = trim($confmdp); //  On récupère la confirmation du mot de passe
-
-        //  Vérification du nom
-        if(empty($nom)){
-            $valid = false;
-            $er_nom = ("Le nom d' utilisateur ne peut pas être vide");
-        }       
-
-        //  Vérification du prénom
-        if(empty($prenom)){
-            $valid = false;
-            $er_prenom = ("Le prenom d' utilisateur ne peut pas être vide");
-        }       
-
-        // Vérification du mail
-        if(empty($mail)){
-            $valid = false;
-            $er_mail = "Le mail ne peut pas être vide";
-
-            // On vérifit que le mail est dans le bon format
-        }elseif(!preg_match("/^[a-z0-9\-_.]+@[a-z]+\.[a-z]{2,3}$/i", $mail)){
-            $valid = false;
-            $er_mail = "Le mail n'est pas valide";
-
-        }else{
-            // On vérifit que le mail est disponible
-            $req_mail = $connexion->query("SELECT email FROM users WHERE email = ?",
-                array($mail));
-
-            $req_mail = $req_mail->fetch();
-
-            if ($req_mail['email'] <> ""){
-                $valid = false;
-                $er_mail = "Ce mail existe déjà";
-            }
-        }
-
-        // Vérification du mot de passe
-        if(empty($mdp)) {
-            $valid = false;
-            $er_mdp = "Le mot de passe ne peut pas être vide";
-
-        }elseif($mdp != $confmdp){
-            $valid = false;
-            $er_mdp = "La confirmation du mot de passe ne correspond pas";
-        }
-
-        // Si toutes les conditions sont remplies alors on fait le traitement
-        if($valid){
-
-            $mdp = crypt($mdp, "$6$rounds=5000$macleapersonnaliseretagardersecret$");
-            $date_creation_compte = date('Y-m-d H:i:s');
-
-            // On insert nos données dans la table utilisateur
-            $sql->insert("INSERT INTO users (nom, prenom, email, password) VALUES 
-                (?, ?, ?, ?)", 
-                array($nom, $prenom, $mail, $mdp));
-
-            header('Location: index.php');
-            exit;
-        }
-    }
 }
 ?>
 
-    
-        
-        <form method="post">
-            <?php
-                // S'il y a une erreur sur le nom alors on affiche
-                if (isset($er_nom)){
-                ?>
-                    <div><?= $er_nom ?></div>
-                <?php   
-                }
-            ?>
-            <input type="text" placeholder="Votre nom" name="nom" value="<?php if(isset($nom)){ echo $nom; }?>" required>   
-            <?php
-                if (isset($er_prenom)){
-                ?>
-                    <div><?= $er_prenom ?></div>
-                <?php   
-                }
-            ?>
-            <input type="text" placeholder="Votre prénom" name="prenom" value="<?php if(isset($prenom)){ echo $prenom; }?>" required>   
-            <?php
-                if (isset($er_mail)){
-                ?>
-                    <div><?= $er_mail ?></div>
-                <?php   
-                }
-            ?>
-            <input type="email" placeholder="Adresse mail" name="mail" value="<?php if(isset($mail)){ echo $mail; }?>" required>
-            <?php
-                if (isset($er_mdp)){
-                ?>
-                    <div><?= $er_mdp ?></div>
-                <?php   
-                }
-            ?>
-            <input type="password" placeholder="Mot de passe" name="mdp" value="<?php if(isset($mdp)){ echo $mdp; }?>" required>
-            <input type="password" placeholder="Confirmer le mot de passe" name="confmdp" required>
-            <button type="submit" name="inscription">Envoyer</button>
-        </form>
-    </body>
-</html>
+
+
+
+<div align="center">
+<h1>Formulaire d'inscription</h1>
+<br/><br/><br/>
+<form method="POST">
+
+              <label>Nom :</label>  <input type="text" placeholder="Entrer nom" name="nom" required>
+              <label>Prénom :</label>  <input type="text" placeholder="Entrer votre prenom" name="prenom" required>
+              <label>email :</label>  <input type="text" placeholder="email" name="email" required>
+              <label>mot de pass :</label>  <input type="text" placeholder="mot de passe" name="password" required>
+              <label>Numéro de Téléphone :</label>  <input type="text" placeholder="Telephone" name="telephone" required>
+                 
+
+                <input type="submit" id='submit' name="inscription" value="je m'inscris" >
+
+</form>
+<?php
+if(isset($erreur))
+{
+    echo '<font color="red">' . $erreur . "</font>";
+}
+?>
+</div>
+

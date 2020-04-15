@@ -1,6 +1,6 @@
 <?php
-session_start();
-// Fichier PHP contenant la connexion à votre BDD
+
+
 require_once '../src/connexionDB.php';
 
 $title = "Accueil";
