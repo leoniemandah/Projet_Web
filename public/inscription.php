@@ -12,7 +12,7 @@ require_once '../layout/header.php';
 
 $bdd = new PDO( "mysql:host=localhost;dbname=airbnb",
 "airbnb",
-'sfe2kktlJ9s8lEP9');
+'4Bm1GmFMVrBL0W0E');
 
 if(isset($_POST['inscription']))
 {
@@ -20,13 +20,14 @@ if(isset($_POST['inscription']))
 {
     $nom = htmlspecialchars($_POST['nom']);
     $prenom = htmlspecialchars($_POST['prenom']);
-    $email = sha1($_POST['email']);
-    $password = htmlspecialchars($_POST['password']);
+    $email = htmlspecialchars($_POST['email']);
+    $password = sha1($_POST['password']);
     $telephone = htmlspecialchars($_POST['telephone']);
 
-$insertmbr = $bdd->prepare("INSERT INTO users(nom, prenom, email, numeroTelephone, password) VALUES(?, ?, ?, ?, ?)");
+$insertmbr = $bdd->prepare("INSERT INTO users (nom, prenom, email, numeroTelephone, password) VALUES (?, ?, ?, ?, ?)");
 $insertmbr ->execute(array($nom, $prenom, $email, $telephone, $password));
-$erreur ="Votre compte a bien été créé !";
+$_SESSION['comptecréé'] = "Votre compte a bien été créé !";
+header('Location: index.php');
 
 }
 else{
