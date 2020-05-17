@@ -17,6 +17,9 @@ $bdd = new PDO( "mysql:host=localhost;dbname=airbnb",
 '4Bm1GmFMVrBL0W0E');
 
 
+
+
+
 if(isset($_GET['id']) && $_GET['id'] > 0)
 {
    $getid = intval($_GET['id']);
@@ -29,10 +32,16 @@ if(isset($_GET['id']) && $_GET['id'] > 0)
 
 <h1>Profil de <?php echo $userinfo['nom']; ?> </h1>
 <br/><br/>
+
+<br/>
 Nom:<?php echo $userinfo['nom']; ?> 
 <br/>
 Mail:<?php echo $userinfo['email']; ?> 
 <br/>
+
+
+
+
 
 
     
@@ -41,7 +50,7 @@ Mail:<?php echo $userinfo['email']; ?>
 if(isset($_SESSION['id']) && $userinfo['id'] == $_SESSION['id'])
 {
 ?>
-    <a href="#">Editer le profil</a>
+    <a href="editionprofil.php">Editer le profil</a>
     <a href="deconnexion.php">Se deconnecter</a>    
  <?php
 }

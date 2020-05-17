@@ -7,6 +7,6 @@
 			<a href="login.php">Connexion</a>
       <a href="inscription.php">Inscription</a>
       <a href="host.php">Devenir hôte</a>
-            <a href=""><i class="fa fa-question-circle" aria-hidden="true"></i>Help</a> 
+      <a href="contact.php">Contact</a> 
 		</nav>
 	

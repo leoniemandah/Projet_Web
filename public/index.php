@@ -1,7 +1,6 @@
 <?php
 
 session_start();
-require_once '../src/connexionDB.php';
 
 $title = "Accueil";
 require_once '../layout/header.php';
@@ -16,11 +15,14 @@ require_once '../layout/header.php';
     <img class=" image _bp " src="/img/k.jpg" alt="Alt text" />
     <div class=" text _q ">Trouver le meilleur endroit pour vivre</div>
   </a>
-
 </div>
+
+
+
+
 <div class="wrap">
   <div class="search">
-    <input type="text" class="searchTerm" placeholder="Recherchez par ville">
+    <input type="text" name="q" class="searchTerm" placeholder="Recherchez par ville">
     <button type="submit" class="searchButton">
       <i class="fa fa-search"></i>
     </button>
