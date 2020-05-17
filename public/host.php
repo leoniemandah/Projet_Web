@@ -32,7 +32,7 @@ if(isset($_POST['inscription']))
 
 $insertmbr = $bdd->prepare("INSERT INTO host (nom, mail, tel, text) VALUES (?, ?, ?, ?)");
 $insertmbr ->execute(array($nom, $mail, $tel, $text));
-$_SESSION['comptecréé'] = "Votre compte a bien été créé !";
+
 header('Location: index.php');
 
 }

@@ -477,4 +477,16 @@ figcaption {
 /* css de la page contact*/
 
 
-	
+	#contact.php body{
+    margin: auto;
+  }
+
+p{
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+form img{
+  width: 50%;
+  height: 50%;
+}
+
