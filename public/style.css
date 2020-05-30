@@ -57,8 +57,8 @@ body{
 .searchButton {
   width: 40px;
   height: 40px;
-  border: 1px solid rgb(149, 255, 149);
-  background: rgb(149, 255, 149);
+  border: 1px solid rgb(186,114,93);
+  background: rgb(186,114,93);
   text-align: center;
   color: #fff;
   border-radius: 0 5px 5px 0;
@@ -132,7 +132,7 @@ width: 100%;
 display:flex;
 flex-wrap: wrap;
 justify-content: space-between;
-background-color: rgb(149, 255, 149) ;
+background-color: rgb(186,114,93) ;
 
 
 }
@@ -227,7 +227,7 @@ main img{
 
 
 footer{
-	background:  rgb(149, 255, 149);
+	background:  rgb(186,114,93);
 }
 
 footer li{
@@ -368,7 +368,7 @@ footer a:hover
     cursor: pointer;
     width: 100%;
     border: none;
-    background: #4CAF50;
+    background: rgb(186,114,93);
     color: #FFF;
     margin: 0 0 5px;
     padding: 10px;
@@ -376,7 +376,7 @@ footer a:hover
   }
   
   #contact button[type="submit"]:hover {
-    background: #43A047;
+    background: rgb(186,114,93);
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
@@ -416,7 +416,7 @@ footer a:hover
   /*CSS de la page login*/
 
 #login.php body{
-    background: #67BE4B;
+    background: #BA725D(186,114,93);
 }
 #login{
     width:400px;
@@ -445,7 +445,7 @@ input[type=text], input[type=password] {
 
 /* style pour les buttons */
 input[type=submit] {
-    background-color: #53af57;
+    background-color: rgb(186,114,93);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -455,8 +455,8 @@ input[type=submit] {
 }
 input[type=submit]:hover {
     background-color: white;
-    color: #53af57;
-    border: 1px solid #53af57;
+    color: rgb(186,114,93);
+    border: 1px solid rgb(186,114,93);
 }
 #fond{
   width: 100%;
