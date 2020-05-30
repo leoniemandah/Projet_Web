@@ -42,6 +42,44 @@ if(isset($_SESSION['id']))
 
                
 }
+
+    if(isset($_FILES['avatar']) AND !empty($_FILES['avatar']['name']))
+    {
+        $tailleMax = 2097152;
+        $extensionsValides = array('jpg', 'jpeg', 'gif', 'png')
+        if($_FILES['avatar']['size'] <= $tailleMax)
+        {
+            $extensionUpload = strtolower(substr(strrchr($_FILES['avatar']['name'], '.'), 1));
+            if(in_array($extensionUpload, $extensionsValides))
+            {
+                $chemin = "public/avatar/".$_SESSION['id'].".".$extensionUpload;
+                $resultat = move_uploaded_file($_FILES['avatar']['tmp_name'], $chemin);
+                if($resultat)
+                {
+                    $updateAvatar = $bdd->prepare('UPDATE users SET avatar = :avatar WHERE id = :id');
+                    $updateAvatar->execute(array(
+                        'avatar' => $_SESSION['id'].".".$extensionUpload,
+                        'id' => $_SESSION['id']
+                    ));
+                    header('Location: profil.php?id='.$_SESSION['id']);
+                }
+                else
+                {
+                    $msg = "Erreur durant l'importation de votre photo de profil";
+                }
+            }
+            else
+            {
+                $msg = "Votre photo de profil doit être au format jpg, jpeg, gif ou png";
+            }
+        }
+        else 
+        {
+            $msg = "Votre photo de profil ne doit pas depasser les 2Mo";
+        }
+    }
+
+
     if(isset($_POST['newpassword']) && !empty($_POST['newpassword']))
     {
         
@@ -66,6 +104,8 @@ if(isset($_SESSION['id']))
     <input type="text" name="newemail" placeholder="email" value="<?php echo $user['email']; ?>"/><br/><br/>
     <label> Mot de passe:</label>
     <input type="text" name="newpassword" placeholder="password" /><br/><br/>
+    <label> Avatar: </label>
+    <input type="file" name="avatar" /><br/><br/>
     
  <input type="submit" value="enregistrer" />
 

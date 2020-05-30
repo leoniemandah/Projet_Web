@@ -32,8 +32,15 @@ if(isset($_GET['id']) && $_GET['id'] > 0)
 
 <h1>Profil de <?php echo $userinfo['nom']; ?> </h1>
 <br/><br/>
-
-<br/>
+<?php
+if(!empty($userinfo['avatar']))
+{
+?>
+<img src="public/avatar/<?php echo $userinfo['avatar']; ?>" width="150" alt="">
+<?php
+}
+?>
+<br/><br/>
 Nom:<?php echo $userinfo['nom']; ?> 
 <br/>
 Mail:<?php echo $userinfo['email']; ?> 
