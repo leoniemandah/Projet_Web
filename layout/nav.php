@@ -1,6 +1,6 @@
 <nav>
 <a class="navbar-brand" href="index.php">
-            <img src="/img/es.jfif" width="80" height="80" alt="">
+            <img src="/img/logo.png" width="80" height="80" alt="">
           </a>
 			
             
