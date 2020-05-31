@@ -490,3 +490,26 @@ form img{
   height: 50%;
 }
 
+
+/* css de la page paris.php*/
+
+
+figure figcaption{
+  position: absolute;
+  width: 45vw;
+  background-color:rgb(255,255,255,0,5);
+  top: 13vw;
+  left:48vw;
+  padding: 0 1vw;
+  padding-bottom: 2vw; 
+}
+
+figure img {
+  width: 45%;
+}
+figure figcaption h1{
+  font-size: 3.7vw}
+
+.text{
+  font-size: 3vw;
+}
