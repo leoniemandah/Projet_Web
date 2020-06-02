@@ -50,7 +50,7 @@ require_once '../layout/header.php';
       <img src="img/lyon.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Lyon</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Réservez pour toutes vos destinations à petit prix.</p>
         <a href="lyon.php">Visiter</a>
       </div>
     </div>
@@ -59,7 +59,7 @@ require_once '../layout/header.php';
       <img src="img/marseille2.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Marseille</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Réservez pour toutes vos destinations à petit prix.</p>
         <a href="marseille.php">Visiter</a>
       </div>
     </div>
@@ -69,7 +69,7 @@ require_once '../layout/header.php';
       <img src="img/paris.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Paris</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Réservez pour toutes vos destinations à petit prix.</p>
         <a href="paris.php">Visiter</a>
       </div>
     </div>
